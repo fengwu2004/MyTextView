@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AutoGrowTextView.h"
 
 @interface ViewController : UIViewController
 
+@property (nonatomic, retain) IBOutlet AutoGrowTextView* textView;
 
 @end
 

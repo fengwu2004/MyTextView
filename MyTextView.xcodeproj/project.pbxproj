@@ -13,6 +13,7 @@
 		CEFB9E481BF9CEDB0085C5A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFB9E461BF9CEDB0085C5A2 /* Main.storyboard */; };
 		CEFB9E4A1BF9CEDB0085C5A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEFB9E491BF9CEDB0085C5A2 /* Assets.xcassets */; };
 		CEFB9E4D1BF9CEDB0085C5A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFB9E4B1BF9CEDB0085C5A2 /* LaunchScreen.storyboard */; };
+		CEFB9E561BF9CEF60085C5A2 /* AutoGrowTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFB9E551BF9CEF60085C5A2 /* AutoGrowTextView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		CEFB9E491BF9CEDB0085C5A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEFB9E4C1BF9CEDB0085C5A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEFB9E4E1BF9CEDB0085C5A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEFB9E541BF9CEF60085C5A2 /* AutoGrowTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoGrowTextView.h; sourceTree = "<group>"; };
+		CEFB9E551BF9CEF60085C5A2 /* AutoGrowTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoGrowTextView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				CEFB9E4B1BF9CEDB0085C5A2 /* LaunchScreen.storyboard */,
 				CEFB9E4E1BF9CEDB0085C5A2 /* Info.plist */,
 				CEFB9E3D1BF9CEDB0085C5A2 /* Supporting Files */,
+				CEFB9E541BF9CEF60085C5A2 /* AutoGrowTextView.h */,
+				CEFB9E551BF9CEF60085C5A2 /* AutoGrowTextView.m */,
 			);
 			path = MyTextView;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEFB9E451BF9CEDB0085C5A2 /* ViewController.m in Sources */,
+				CEFB9E561BF9CEF60085C5A2 /* AutoGrowTextView.m in Sources */,
 				CEFB9E421BF9CEDB0085C5A2 /* AppDelegate.m in Sources */,
 				CEFB9E3F1BF9CEDB0085C5A2 /* main.m in Sources */,
 			);
@@ -263,10 +269,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jianfei Chen (K5H3MEFEEM)";
 				INFOPLIST_FILE = MyTextView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = sss.MyTextView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruoogle.gamechat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "62d6fcec-30bc-467e-9179-06a8215b0767";
 			};
 			name = Debug;
 		};
@@ -275,9 +284,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MyTextView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = sss.MyTextView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruoogle.gamechat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "62d6fcec-30bc-467e-9179-06a8215b0767";
 			};
 			name = Release;
 		};
